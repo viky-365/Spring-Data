@@ -10,6 +10,11 @@ repositories{ mavenCentral() }
 
 
 dependencies{
+	compile "org.springframework.data:spring-data-oracle:1.0.0.RELEASE"
 	compile "org.springframework:spring-web:${springVersion}"
+	compile "com.mysema.querydsl:querydsl-sql:2.3.0"
+	compile group:"mysql", name:"mysql-connector-java", version: "5.1.9"
+
 	testCompile "org.springframework:spring-test:${springVersion}"
+	testCompile group: 'junit', name: 'junit', version: '4.+'
 }
